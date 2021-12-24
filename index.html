@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Website</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!--Project specific information:style, script, style-->
+    <!--  for notes-->
+    <!--Internal Styling
+
+        Note: Inline Styling will overwride internal styling when we use conbination 
+        of inline and internal styling, inline will always overwride
+    -->
+</head>
+<body style="background: ivory;">
+    <!--Body has the action html codes:button, dropdown, text, etc-->
+    <!--HEADINGS: there are 6 headings from H1 to H6-->
+   <h1>My Information</h1> 
+   <!--USA ->BOLD-> <b> 
+       USA ->UNDERLINED -> <u>
+       rich ->italic -> <i> -->
+   <p>
+       I live in <b>USA.</b> <br>
+      <u>USA</u> has freedom.<br>
+      <b><u><i>USA</i></u></b> is very <i> rich.</i> 
+   </p>
+   <!--<h1>         : opening tag
+      </h1>         : closing tag
+      My information: content 
+      style         : attribute
+     color:red      : value of the attribute-->
+
+
+       <!--change the fontsize to 1.8em
+           font-sizze:1.8 em
+           font-size:120%
+           font-size:50px
+        1em= 16px-->
+        <div style="font-size: 50px; background-color:yellow;">
+            <h2>IMAGES</h2>
+            <img 
+            class="img_1"
+            src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"/>
+       
+           <img 
+           class="img_2"
+           src="logo.jpeg">
+
+        </div>
+     <!--Aligninh the text to center, or right
+     https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-->
+     
+     <!--Backgroun Color
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background-color-->
+     <h3 >LINKS</h3>
+
+     Text Link:<br>
+     <a 
+     href="https://www.techproeducation.com/"
+     target="_blank">
+         TechPro Education
+     </a>
+
+     <br>
+     Image Link:<br>
+     <a href="https://www.google.com/"
+     target="_blank">
+
+        <img 
+        style="width: 250px;"
+        src="https://d.newsweek.com/en/full/1602236/google.jpg" alt="">
+     </a>
+
+     <p style="text-align:right">3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many</p>
+     
+     <!--Style h4 tag:
+     color gold
+    font size 45 px
+     Font family: courier
+    background color light blue
+     align the right-->
+     <!--INLINE STYLING 
+      <h4 style="
+     color: gold;
+     font-size: 45;
+     font-family: Courier; 
+     background-color: lightblue;
+      text-align: right; ">Heading 4</h4>
+    -->
+     <!--class attribute used for When we use same style for different elements-->
+     <h4 class="yb">WEB TABLES</h4>
+     <table>
+         <thead>
+             <th>Name</th>
+             <th>City</th>
+             <th>Phone</th>
+         </thead>
+         <tr>
+             <td>John</td>
+             <td>Dallas</td>
+             <td>1234</td>
+         </tr>
+         <tr>
+             <td>Sam</td>
+             <td>LA</td>
+             <td>5678</td>
+         </tr>
+     </table>
+     <h5 class="yb">Heading 5</h5>
+
+     <!--id attribute is used when we use UNIQUE styling
+    id should be unique  
+    # is used for if
+    . is used for class-->
+     <h6 id="hf">FORM ELEMENTS</h6>
+    <form>
+        <fieldset>
+            <legend>Open an account</legend>
+            <!--fullname-->
+            <label>Full Name:</label><br
+            <input type="text" placeholder="enter your name"><br>
+            <!--username-->
+            <label>Username:</label><br>
+            <input type="textBox" placeholder="enter your username"><br>
+            <!--password-->
+            <label>Password</label><br>
+            <input type="text"placeholder="enter your password"><br>
+            <!--confrim password-->
+            <label>Confirm Password</label><br>
+            <input type="text"placeholder="enter your password"><br>
+            <!--email-->
+            <label>Email :</label><br>
+            <input type="email"placeholder="enter you email"><br>
+            <!--checkbox :name is optional-->
+            <label>Languages :</label><br>
+            <input type="checkbox" name="english">
+            <label>English</label><br>
+            <input type="checkbox" name="spanish">
+            <label>Spanish</label><br>
+            <input type="checkbox" name="french">
+            <label>French</label><br> 
+            <!--RAdio Button-->
+            <label>Gender :</label><br>
+            <input type="Radio" name="gender">
+            <label>Male</label><br>
+            <input type="Radio" name="gender">
+            <label>Female</label><br>
+            <input type="Radio" name="gender">
+            <label>Others</label><br>
+            <!--date-->
+            <label>Select your birthday : </label><br>
+            <input type="date"><br>
+            <input type="time"><br>
+            <input type="datetime-local"><br>
+            <!--dropdown:1.select tag is used to create dropdown
+            2.option tag is used to add option
+            selected marks the option as default selected
+            multiple->let us choose multiple option
+        
+        -->
+            
+            <label>Country</label><br>
+            <select multiple>
+                <option value="usa">USA</option>
+                <option value="germany">Germany</option>
+                <option value="russia" selected>Russia</option>
+                <option value="peru">Peru</option>
+                <option value="ivory-coast">Ivory Coast</option>
+            </select>
+          <br>
+          <!--color-->
+          <label>Select a color</label><br>
+          <input type="color"><br>
+          <!--file-->
+          <label>Upload a file : </label><br>
+          <input type="file"> <br>
+          <!--text area: larger text box-->
+          <label>Description</label> <br>
+          <textarea
+           cols="30" 
+           rows="20" 
+           placeholder="enter your description"></textarea>
+           <!--button
+               1.input type submit
+               2.button tag-->
+               <br>
+               <input type="submit" value="Submit!!!!">
+               <button>Click mee!!!</button>
+
+
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
